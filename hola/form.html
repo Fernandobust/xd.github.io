@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../hola/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700dispaly=swap">
+</head>
+
+<body>
+    <form action="conexion.php" method="post" id="form">
+        <div class="grupo">
+            <h1>Registro</h1>
+            <div class="grupo">
+                <input type="text" name="nom" id="name"><span class="barra"></span>
+                <label for="">Nombre</label>
+            </div>
+            <div class="grupo">
+                <input type="email" name="correo" id="email"><span class="barra"></span>
+                <label for="">Email</label>
+            </div>
+            <div class="grupo">
+                <input type="password" name="contras" id="contra"><span class="barra"></span>
+                <label for="">Password</label>
+            </div>
+            
+            </div>
+            <h4>Kardashian Favorita</h4>
+            <div class="numero_de_jugadores">
+                <input type="radio" id="solo" name="equipo" value="solo">
+                <label for="solo">Kim</label>
+            </div>
+                <div class="numero_de_jugadores">
+                <input type="radio" id="duos" name="equipo" value="duos">
+                <label for="duos">Kylie</label>
+            </div>
+            <div class="numero_de_jugadores">
+                <input type="radio" id="Trios" name="equipo" value="Trios">
+                <label for="Trios">Khloé</label>
+            </div>
+            <div class="numero_de_jugadores">
+                <input type="radio" id="Squad" name="equipo" value="Squad">
+                <label for="Squad">Kendall</label>
+            </div>
+            <button type="submit">enviar</button> 
+            
+            <p class="warnings" id="warnings"></p>
+        </div>
+    </form>
+    <script src="../hola/main.js"></script><!--Llama al documento de JS-->
+</body>
+
+</html>

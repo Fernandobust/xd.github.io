@@ -1,0 +1,144 @@
+:root {
+    --colorTextos: #ff8100;
+    }
+    
+    *,
+    ::before,
+    ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family: 'Roboto';
+        background: #00bf8f; 
+        background: -webkit-linear-gradient(to right, #521f68, #7212ef);  
+        background: linear-gradient(to right, #030845, #2effe2); 
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1{
+      text-align: center;  
+      font-weight: 700;
+      color:rgb(255 191 74);
+    }
+    h4{
+        text-align: center;  
+        font-weight: 700;
+        color:rgb(255 188 0);  
+    }
+    form{
+        align-self: center;
+        background: rgba(0, 0, 0, 0.192);
+        box-shadow: 0 0 6px 0 rgb(255 129 0);
+        border-radius: 30px;
+        height: auto;
+    }
+    
+    .form{
+        width: 100%;
+        margin: auto;
+    }
+    
+    form .grupo{
+        position: relative;
+        margin: 45px;
+    }
+    
+    form .categorias_checkbox{
+        position: relative;
+        margin: 20px;
+    }
+    form .numero_de_jugadores{
+        position: relative;
+        margin: 20px;
+    
+    }
+    
+    
+    input{
+        background: none;
+        color: #e70c0c;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid rgb(195 15 15) ;
+    }
+    
+    input:focus{
+        outline: none;
+        color: #ff0303;
+    }
+    
+    label{
+        color: var(--colorTextos);
+        font-size: 16px;
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+        top: 10px;
+        transition: 0.5s ease-out all;
+        pointer-events: none;
+    }
+    
+    input:focus~label,
+    input:valid~label{
+        top: -14px;
+        font-size: 12px;
+        color: #f6970a;
+    }
+    .barra{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    
+    .barra::before{
+        content: "";
+        height: 2px;
+        width: 0%;
+        bottom: 0;
+        position: absolute;
+        background: linear-gradient(to right, #001510, #00bf8f);
+        transition: 0.3s ease-out width;
+        
+    }
+    
+    input:focus~.barra::before{
+        width: 100%;
+        left: 0;
+    }
+    
+    .warnings{
+     width: 200px;
+     text-align: center;
+     margin: auto;
+     color: #cb0000;
+     padding-top: 20px;
+    }
+    
+    button{
+        font-family: 'Roboto';
+        background:#00bf8f;
+        border: 30px #220230;
+        border-radius: 30px;
+        display: block;
+        width: 60%;
+        margin: 10px auto;
+        color: #f30a0a;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width:500px){
+        form{
+            width: 80%;
+        }
+    }
